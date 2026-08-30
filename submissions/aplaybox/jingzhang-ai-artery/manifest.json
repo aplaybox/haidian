@@ -12,7 +12,7 @@
     "agent_name": "Aplaybox AI Urbanist",
     "model": "agent-declared-model",
     "model_family": "glm",
-    "model_detail": "GLM-5.2 (Z.ai) - main agent for urban design generation"
+    "model_detail": "GLM-5.3-Flash (Z.ai) - main agent for urban design generation"
   },
   "generated_at": "2026-08-24T02:53:19Z",
   "files": [
@@ -26,25 +26,25 @@
       "role": "narrative",
       "required": true,
       "language": "zh",
-      "sha256": "b08df9f129ac24c9900a1bb7f4d7e1fdca32a4e3cb108ee208acc2173130ed0b"
+      "sha256": "89b3146ec39553273198bb0174b6af9d93e9d556f301aec5a2fc71550bbcc398"
     },
     {
       "path": "agent.json",
       "role": "agent_card",
       "required": true,
-      "sha256": "30762b0ca6fc7d7e5ea21651e8cfd686ed5b50b2278dd689ce9a868fe20a1bda"
+      "sha256": "802f7d50b0b5e1f858f5a736ac6286e43b070c95ab5f54209b0fba5b990784a5"
     },
     {
       "path": "metrics.json",
       "role": "metrics",
       "required": true,
-      "sha256": "6ab220fad95528196f18032bf5b24d4d54936f8a1790ca8889c1671f5cebf717"
+      "sha256": "ed7f8c7d095daa7afb4f87eb33c6de456d184d67214089f0e2c6f77d6c40b458"
     },
     {
       "path": "assumptions.json",
       "role": "assumptions",
       "required": true,
-      "sha256": "727523000c03788edeabee3d70bc2692cc764425fa155d6e97ae3dbb76286ae4"
+      "sha256": "dbf5e087fb031519372154c23c2918a4db4ca475d79aea20ce495b6228c8cbde"
     },
     {
       "path": "sources.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "747dca6df065881fdfd6258b166762b6079b9468b41afcc6d79ba476461fa1f8"
+      "sha256": "245d0feb95d83a847b82c220bbfc5bded3293b7227d688df565d6fa0fcccbf50"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "ce09fb9a724557cc59bca468e51774e02d5c8abe43db01e32eb11d0c6db8aaef"
+      "sha256": "eaa26127bb4a71b6e003fcbe5ccb56e75a3cf2b567d648c4014cd05d14582de6"
     },
     {
       "path": "report/narrative.md",
@@ -93,7 +93,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "56a19fa38c47da666d1ba36e5acab707a60b93091aaa6539c129eb48856537fc"
+      "sha256": "05459db92040e28de1abbba2260ffd907ee4c04573ae9375a8d37fa382ac757e"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -114,7 +114,7 @@
       "role": "visualization",
       "required": true,
       "language": "zh",
-      "sha256": "e7179a738f646c8bf28f4d4998f229004f6d03c26776c4b8549463820cc8177c"
+      "sha256": "3914d746b1d0ab788902f93a790e256ea0d99e1c24d7212b47c545943000e54b"
     },
     {
       "path": "assets/figures/key-areas.png",
@@ -225,7 +225,7 @@
       "required": true,
       "language": "en",
       "translation_of": "proposal.md",
-      "sha256": "4b5b0be7b27078dcb49b0602d06b187170e68c4c8dc1ac2b9c0a093eacbbced1"
+      "sha256": "1dc50dddea17b8d770efdd9004fc40622ae8989d185846593066583e9317933e"
     },
     {
       "path": "report/proposal.en.html",
@@ -233,7 +233,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "b2bb5c6ccee859b97411351da36cd91ae4d6f7fbf478e2ab67e347c3f7d2cfa2"
+      "sha256": "9cff49ef4fd53b735d29214f9ccb66e0e4728782dab0eefd6d89481e0ce34a81"
     },
     {
       "path": "visual/index.en.html",
@@ -241,7 +241,7 @@
       "required": true,
       "language": "en",
       "translation_of": "visual/index.html",
-      "sha256": "7b297d45f5ebf6f366fce98639a309d8e77c21bb7fc6d27075f26a786f03cafd"
+      "sha256": "ea2e620ee26256db825b4351b3ec2b3d2eda733e9f88060c1c085f18f006d1ce"
     },
     {
       "path": "drawings/a3-booklet.en.pdf",
@@ -306,7 +306,7 @@
       "role": "narrative",
       "required": false,
       "language": "zh",
-      "sha256": "9e79c964c916e44cee4d6bf793f1d7a383ad7c46b3891d375a811f47d3ca425d"
+      "sha256": "f59403e1c8641b2313f613940fa1463dca36455ae6d522ed3877cab82c87135d"
     },
     {
       "path": "assets/media/cover.webp",
@@ -503,6 +503,146 @@
       "language": "en",
       "sha256": "f099966b77d6416dac7f4d35c93ea080d4b085fa948ba8fec7a27dd7d4a38af4",
       "translation_of": "assets/figures/metrics-evidence.png"
+    },
+    {
+      "path": "simulation.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "964ce59999bad69eb6dd5a422bed38fd77194f97dfee947a6d2897c6a4179f03"
+    },
+    {
+      "path": "assets/media/brand_distinctiveness_matrix.md",
+      "role": "transcript",
+      "required": false,
+      "language": "zh",
+      "sha256": "98c190d8e07b76d7e7b706c8e3a3a96b920070e85c27f4e14db1d13ca8b9765b"
+    },
+    {
+      "path": "assets/media/brand_distinctiveness_matrix.en.md",
+      "role": "transcript",
+      "required": false,
+      "language": "en",
+      "translation_of": "report/brand_distinctiveness_matrix.md",
+      "sha256": "9f46a990e65b13d0757f7e0e84ab08a0d069d38ec1e0403a3c0118dc685d2a97"
+    },
+    {
+      "path": "visual/assets/jury-evidence-index.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "2b61606598907610eed288a4602f24ad1d6914437817207857b1c29c4848259c"
+    },
+    {
+      "path": "visual/assets/p29_consistency_check.json",
+      "role": "evidence_data",
+      "required": false,
+      "sha256": "ab6a66e1c17b76a268b8188b8d43fa27d8938a5ac67c0797b747381498ad65ec"
+    },
+    {
+      "path": "assets/media/audio-guide.m4a",
+      "role": "audio",
+      "required": false,
+      "title_zh": "京张100·AI 大动脉 中文音频导览",
+      "title_en": "Jingzhang 100 AI Artery audio guide (Chinese)",
+      "description_zh": "约 64 秒的合成语音方案概述：一带三核结构、三处重点区定位与「无 AI 时仍可办成同一件事」的治理底线；概念演示，非官方导览。",
+      "description_en": "A ~64-second synthetic-speech overview: the one-belt-three-cores structure, three key-area positions, and the governance baseline that services must work with AI off; concept demonstration, not an official guide.",
+      "transcript": "assets/media/audio-guide.md",
+      "sha256": "efa52ad106bef2b77d9046fca00bf907892c03d7b412a0bbaa67bf945414aea1"
+    },
+    {
+      "path": "assets/media/audio-guide-en.m4a",
+      "role": "audio",
+      "required": false,
+      "title_zh": "京张100·AI 大动脉 英文音频导览",
+      "title_en": "Jingzhang 100 AI Artery audio guide (English)",
+      "description_zh": "约 71 秒英文合成语音方案概述，内容与中文版等价；概念演示，非官方导览。",
+      "description_en": "A ~71-second English synthetic-speech overview, content-equivalent to the Chinese version; concept demonstration, not an official guide.",
+      "transcript": "assets/media/audio-guide-en.md",
+      "sha256": "22e912a9af550c804fd6b9e62efc6b15b7f8d89117abd3ce215e6731b9d24390"
+    },
+    {
+      "path": "assets/media/audio-guide.md",
+      "role": "transcript",
+      "required": false,
+      "language": "zh",
+      "sha256": "9b380784dde525a77f01bd2924ae960099d8c86b7099cdbc77bce9bcbf3d81dd"
+    },
+    {
+      "path": "assets/media/audio-guide-en.md",
+      "role": "transcript",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/media/audio-guide.md",
+      "sha256": "abb5f5f807042609a68650ae016ee3d9e726d499585e5278c66ad65401fb3c71"
+    },
+    {
+      "path": "assets/media/guided-tour.mp4",
+      "role": "video",
+      "required": false,
+      "title_zh": "京张100·AI 大动脉 概念导览视频（中文）",
+      "title_en": "Jingzhang 100 AI Artery concept walkthrough (Chinese)",
+      "description_zh": "约 76.5 秒幻灯片式概念走查：由本包图件合成 7 个画面并配 TTS 解说与 WebVTT 字幕；概念演示而非建成实景，不自动播放。",
+      "description_en": "A ~76.5-second slide-style concept walkthrough: 7 frames assembled from this package's figures with TTS narration and WebVTT captions; a concept demo, not built reality; never autoplays.",
+      "poster": "assets/media/guided-tour-poster.png",
+      "caption": "assets/media/guided-tour.vtt",
+      "transcript": "assets/media/guided-tour.md",
+      "sha256": "aa2987d291f9c47bafcb577563e128c34ba2e10b67404aa68d520134c316cb55"
+    },
+    {
+      "path": "assets/media/guided-tour-en.mp4",
+      "role": "video",
+      "required": false,
+      "title_zh": "京张100·AI 大动脉 概念导览视频（英文）",
+      "title_en": "Jingzhang 100 AI Artery concept walkthrough (English)",
+      "description_zh": "约 86 秒英文版概念走查，画面使用英文版图件，字幕与逐字文稿齐全；概念演示而非建成实景，不自动播放。",
+      "description_en": "An ~86-second English walkthrough using English figure frames, with captions and verbatim transcript; a concept demo, not built reality; never autoplays.",
+      "poster": "assets/media/guided-tour-poster-en.png",
+      "caption": "assets/media/guided-tour-en.vtt",
+      "transcript": "assets/media/guided-tour-en.md",
+      "sha256": "182dc0f413d0803af5665a1fedd978b5ff0106e6706d73de1a30f84b9798285a"
+    },
+    {
+      "path": "assets/media/guided-tour.vtt",
+      "role": "caption_track",
+      "required": false,
+      "language": "zh",
+      "sha256": "19eaea7edf2a86978be9f61992cb257da36d44e99a3aeffd68a05602207087ff"
+    },
+    {
+      "path": "assets/media/guided-tour-en.vtt",
+      "role": "caption_track",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/media/guided-tour.vtt",
+      "sha256": "f43522b26aa99fe2e43fec56446931a34034e0348c6b4cc5d1ca8f7de520c95f"
+    },
+    {
+      "path": "assets/media/guided-tour.md",
+      "role": "transcript",
+      "required": false,
+      "language": "zh",
+      "sha256": "f6c935fc9388ae254f9a9919a019cc620366143126001aa8de08c49f9087a67d"
+    },
+    {
+      "path": "assets/media/guided-tour-en.md",
+      "role": "transcript",
+      "required": false,
+      "language": "en",
+      "translation_of": "assets/media/guided-tour.md",
+      "sha256": "8f499a3672110afa200c49af3a2aa1d0a7f19080fab3b4e0535c88fad0cbeb66"
+    },
+    {
+      "path": "assets/media/guided-tour-poster.png",
+      "role": "media_poster",
+      "required": false,
+      "language": "neutral",
+      "sha256": "52c3b2baf0eb32f543a240d99e58fae97350ce5b4207f4ecf9d29e841b473264"
+    },
+    {
+      "path": "assets/media/guided-tour-poster-en.png",
+      "role": "media_poster",
+      "required": false,
+      "language": "neutral",
+      "sha256": "52c3b2baf0eb32f543a240d99e58fae97350ce5b4207f4ecf9d29e841b473264"
     }
   ],
   "validation_claim": {
