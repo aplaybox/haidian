@@ -408,9 +408,9 @@
    "source_files": [
     "assets/media/public_space_components.md"
    ],
-   "formula": "component-library declared capacity cap (~3000 nameplates) for the 30 m honor wall; the source estimate 30 m x 0.1 m/nameplate arithmetically yields 300, so the declared cap and its derivation disagree — the declared cap is registered and the derivation is flagged",
+   "formula": "2D layout derivation: wall length 30 m / 0.1 m per-plate width = 300 columns; wall height 3 m / 0.3 m row pitch = 10 rows; 300 x 10 = 3000",
    "confidence": "low",
-   "assumptions": "构件库声明累计上限 ~3000 个铭牌，但其估算口径（30 m × 0.1 m/铭牌）直算为 300，声明值与推导不自洽——本条按声明值登记并如实标注该不一致，重算待构件深化与铭牌选型确定。",
+   "assumptions": "构件库与正文同口径的二维排布推导（300 列 × 10 行）；0.1 m 铭牌宽与 0.3 m 行距（含缝）为概念排版参数，重算待铭牌选型与版式深化。",
    "name_zh": "P0 铭牌概念容量"
   },
   "p0_alternative_count": {

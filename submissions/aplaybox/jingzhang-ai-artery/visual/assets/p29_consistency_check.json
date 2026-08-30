@@ -1,6 +1,6 @@
 {
  "schema_version": "1.0",
- "round": "v2.29 / P29",
+ "round": "v2.30 / P30",
  "generated_at": "2026-08-30",
  "tool": "session-local consistency cross-check (zh/en narrative, simulation ledger, media files, manifest registration, assumptions/claims)",
  "summary": {
@@ -120,7 +120,7 @@
    "detail": "1592494 bytes"
   },
   {
-   "item": "media assets/media/guided-tour.en.mp4",
+   "item": "media assets/media/guided-tour-en.mp4",
    "pass": true,
    "detail": "1740913 bytes"
   },
@@ -130,7 +130,7 @@
    "detail": "1122 bytes"
   },
   {
-   "item": "media assets/media/guided-tour.en.vtt",
+   "item": "media assets/media/guided-tour-en.vtt",
    "pass": true,
    "detail": "1331 bytes"
   },
@@ -140,7 +140,7 @@
    "detail": "2920 bytes"
   },
   {
-   "item": "media assets/media/guided-tour.en.md",
+   "item": "media assets/media/guided-tour-en.md",
    "pass": true,
    "detail": "3243 bytes"
   },
@@ -160,7 +160,7 @@
    "detail": "4489 bytes"
   },
   {
-   "item": "media assets/media/guided-tour-poster.en.png",
+   "item": "media assets/media/guided-tour-poster-en.png",
    "pass": true,
    "detail": "4489 bytes"
   },
@@ -195,7 +195,7 @@
    "detail": "video"
   },
   {
-   "item": "manifest assets/media/guided-tour.en.mp4 role",
+   "item": "manifest assets/media/guided-tour-en.mp4 role",
    "pass": true,
    "detail": "video"
   },
@@ -205,7 +205,7 @@
    "detail": "caption_track"
   },
   {
-   "item": "manifest assets/media/guided-tour.en.vtt role",
+   "item": "manifest assets/media/guided-tour-en.vtt role",
    "pass": true,
    "detail": "caption_track"
   },
@@ -215,7 +215,7 @@
    "detail": ""
   },
   {
-   "item": "manifest assets/media/guided-tour.en.md listed",
+   "item": "manifest assets/media/guided-tour-en.md listed",
    "pass": true,
    "detail": ""
   },
@@ -235,7 +235,7 @@
    "detail": ""
   },
   {
-   "item": "manifest assets/media/guided-tour-poster.en.png listed",
+   "item": "manifest assets/media/guided-tour-poster-en.png listed",
    "pass": true,
    "detail": ""
   },
@@ -250,12 +250,12 @@
    "detail": ""
   },
   {
-   "item": "zh iteration v2.29",
+   "item": "zh iteration v2.30",
    "pass": true,
    "detail": ""
   },
   {
-   "item": "en iteration v2.29",
+   "item": "en iteration v2.30",
    "pass": true,
    "detail": ""
   },

@@ -9,7 +9,7 @@ license: "COMMUNITY-DISPLAY-ONLY"
 summary: "以京张铁路百年叙事为文化主轴，以智能体为新基础设施，把 11.4 km² 总体设计范围组织为'一带三核、多点场景、蓝绿慢行复合环'的 AI 创新带；通过结构化 GeoJSON、可复算指标（含 v2.29 离线演练台账）、7 张中英双版核心图件、双语音视频导览、P0 试点预可行性与离线可视化页，呈现一个可讨论、可复核、可替换 official 边界后重算的概念方案。"
 tracks: ["jingzhang-heritage-narrative", "ai-traffic-walkability", "civic-agent-governance"]
 scenarios: ["ai-cultural-guide", "ai-traffic-walkability", "enterprise-service-copilot", "public-safety-operations-review", "robot-delivery-low-speed"]
-iteration: "v2.29"
+iteration: "v2.30"
 ---
 
 # 京张100·AI 大动脉：百年铁路叙事 × 智能体新基建
@@ -427,7 +427,7 @@ AI 朝圣地标：方案在 `geometry/public_space.geojson` 中布局 4 个 AI �
 | P0 要素 | 概念取值（参与者敏感性演算） | 口径与依据 |
 | --- | --- | --- |
 | 荣誉墙概念包络 | 长 30 m × 高 3 m × 厚 0.4 m，贴走廊东侧绿带平行布设 | 构件库 K-WALL-001 概念值 [metric:p0_wall_envelope_length_m] [metric:p0_wall_envelope_height_m] |
-| 铭牌容量上限 | 约 3000 块（构件库声明值；其估算口径 30 m ÷ 0.1 m/铭牌直算为 300，声明值与推导不一致已如实登记，重算待铭牌选型） | 构件库声明 + 差异标注 [metric:p0_nameplate_capacity_count] |
+| 铭牌容量上限 | 约 3000 块——二维排布推导可复算：30 m 墙长 ÷ 0.1 m/铭牌宽 = 300 列；3 m 墙高 ÷ 0.3 m 行距 = 10 行；300 × 10 = 3000 | 构件库同口径推导 [metric:p0_nameplate_capacity_count] |
 | 停留面与通道 | 观礼停留面约 12 m × 10 m；机器人/配送通道宽 2.5 m 贴墙外侧；无障碍环通宽度按现行无障碍标准设计（具体待专业深化） | 概念布置；通道让位优先级：无障碍环通 > 步行 > 机器人 |
 | 现场组织参数 | 观礼排队 8 人停行线（运营设计目标）；NFC 感应点 × 12 沿墙均布 | 概念值，现场参数待 P-1 基线与运营方确定 [metric:p0_queue_stop_line_persons] |
 | 四备选方案 | A 正式构筑物（本轮主案）；B 轻量化一期（仅基础与首段 10 m）；C 临时装置（可逆装配，活动期布设）；D 数字荣誉墙（线上 + 现场二维码） | 与 T3 条件树失败退出路径一致 [metric:p0_alternative_count] |
@@ -472,7 +472,7 @@ AI 朝圣地标：方案在 `geometry/public_space.geojson` 中布局 4 个 AI �
 
 **交通与实施类指标**：道路总长度 [metric:road_total_length_m] = ~59 km (provisional 模型几何)，由 [data:geometry/roads.geojson#ROAD-NS-01] 等 11 条道路中心线投影后求和复算。分期数量 [metric:phase_count] = 3（近期 2026-2028、中期 2028-2030、远期 2030-2035），对应 [data:geometry/phasing.geojson#PHASE-001] 起的三个分期 polygon [depth:phasing_implementation]。
 
-**离线演练与 P0 预可行性类指标（v2.29 新增，13 项）**：演练族 7 项以 `simulation.json` 为数据源——任务数 12、成功率 11/12、调度模式通过率 12/12、能耗超预算 1 项、审计完备率 11/12、重规划 P95 6.8 s、现场演练任务数 0（诚实零），读数叙述与处置见「验证与测量协议」章演练台账节；治理断言 1 项（12 卡 × 4 断言 = 48 项，桌面核对口径）；P0 族 5 项为构件库与正文登记的概念设计参数（荣誉墙包络 30 m × 3 m、铭牌容量声明值约 3000 及其口径差异标注、四备选、8 人停行线），confidence=low，不构成可研或工程依据 [metric:simulation_success_rate] [metric:offline_takeover_assertion_count] [metric:p0_wall_envelope_length_m]。
+**离线演练与 P0 预可行性类指标（v2.29 新增，13 项）**：演练族 7 项以 `simulation.json` 为数据源——任务数 12、成功率 11/12、调度模式通过率 12/12、能耗超预算 1 项、审计完备率 11/12、重规划 P95 6.8 s、现场演练任务数 0（诚实零），读数叙述与处置见「验证与测量协议」章演练台账节；治理断言 1 项（12 卡 × 4 断言 = 48 项，桌面核对口径）；P0 族 5 项为构件库与正文登记的概念设计参数（荣誉墙包络 30 m × 3 m、铭牌容量 3000 = 300 列 × 10 行二维推导、四备选、8 人停行线），confidence=low，不构成可研或工程依据 [metric:simulation_success_rate] [metric:offline_takeover_assertion_count] [metric:p0_wall_envelope_length_m]。
 
 核心指标复算结果（provisional 模型几何，精度刻意降至约数）：site_area_sqm ≈ ~11.4 km²（公告 11.4 km²）；key_area_total_sqm ≈ ~3.69 km² / ~368 ha（公告 368.4 ha）；green_ratio ≈ 2.8958%（含京张遗址公园走廊与 5 个口袋公园，不含居住区附属绿地与道路绿带）；public_space_ratio ≈ 0.80%；concept_far = unknown（原始公式 footprint×height/site_area 量纲为长度而非容积率，已废弃；待 official 控规条件与建筑层数/层高数据补齐后按 GFA/site_area 复算）；road_total_length_m ≈ ~59 km；ai_landmark_count = 4（≥3）；scenario_card_count = 12（≥10）；industry_test_scenario_count = 3（≥3）；user_persona_count = 5（≥5）。所有平方米级数字均明确标为 provisional 模型几何，不得作为官方精确面积依据。
 

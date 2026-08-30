@@ -2,6 +2,15 @@
 
 本文件按版本记录方案的实质变化、外部反馈与仍然敞开的问题。每一条都写明改了什么、为什么改、以及这次修改暴露出的下一个问题，不写空泛的完善与优化。
 
+## v2.30 (2026-08-30) — P30 评审阻断项修复轮：对症 #4276 评审三项 required repairs（铭牌二维推导 / 中文字体根因修复 / translation_of 指正）
+
+- **背景**：P29 评审 80.0（request-changes）列出 3 项参与者可立即关闭的阻断项：①P0 荣誉墙铭牌容量 3000 与 30 m ÷ 0.1 m = 300 的推导矛盾未决（可实施性降至 3/5 的直接原因）；②report/proposal.html 中文渲染出现方框缺字（表达完整度降至 3/5 的直接原因）；③manifest 中 brand_distinctiveness_matrix.en.md 的 translation_of 指向不存在路径。本轮逐项根因修复，不动几何、不动既有图件、不新增主张。
+- **修复 ①（铭牌容量矛盾）**：根因是 v2.29 只登记了构件库的一维口径声明而未给二维推导。本轮补齐可复算推导——30 m 墙长 ÷ 0.1 m/铭牌宽 = 300 列；3 m 墙高 ÷ 0.3 m 行距 = 10 行；300 列 × 10 行 = 3000——并同步四处：构件库原文行改为二维推导表述、metrics.json p0_nameplate_capacity_count 的 formula/assumptions 重写（删去「声明值与推导不一致」段落）、正文 P0 表行与指标族段改写（中英同步）。数值 3000 不变，推导闭环；铭牌宽 0.1 m 与行距 0.3 m（含缝）为概念排版参数，重算待铭牌选型。
+- **修复 ②（中文豆腐块根因）**：v2.29 重嵌字体时 fontTools 子集保存未设 flavor，产出**裸 TTF 却声明为 woff2**（base64 前 4 字节为 \x00\x01\x00\x00 而非 wOF2），评审端 headless 渲染器解析失败回退系统字体，无 CJK 字体环境即成方框。本轮修复 f.flavor='woff2' 后重建子集（zh 239/246 KiB，en 41/42 KiB），并新增本地 Playwright 截图目检：标题/摘要/表格/正文全部真实字形渲染，无一方框；魔法字节与 cmap 逐字校验通过（1280 字形全量在位）。
+- **修复 ③（translation_of）**：assets/media/brand_distinctiveness_matrix.en.md 的 translation_of 由残留的 report/brand_distinctiveness_matrix.md 修正为 assets/media/brand_distinctiveness_matrix.md；全 manifest 扫描确认 0 条悬空 translation_of（report/proposal.en.html → report/proposal.html 原有映射保持不变）。
+- **明确不做**：不动 provisional 几何与全部图层；不重生成图件与板册（铭牌数字未出现在任何图件中，无需重出）；不新增指标与主张；中英同步修改。
+- **复验**：manifest 全量 sha256 重算；双语 HTML 重渲染 + woff2 重嵌 + 本地截图目检；会话内一致性核对重跑（结果更新至 visual/assets/p29_consistency_check.json）。
+
 ## v2.29 (2026-08-30) — P29 三包增强轮：多模态导览 + P0 预可行性 + 演练台账 + 品牌区分度矩阵（对症 P28 评审三个 4/5 维度的可动项）
 
 - **背景**：P28 评审 91.0（APPROVED，featured-candidate，无阻断项），七维中可实施性 4/5（「3×4 用地网格、概念中心线及节点框架仍主要是策略级证据」）、表达完整度 4/5（「总体板信息密度较高」）、原创性 4/5（「品牌区分度、商标近似和公众接受度仍按 ASM-012 保持待验证」）；同期上游新增 `simulation.json` 机制（docs/simulations.md），头部同行方案已出现 96 分采样。本轮在**不动 provisional 几何、不动既有图件与板册、不新增空间与法律承诺**的前提下，执行三项参与者可动增强，并同步上游新机制。
