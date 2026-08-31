@@ -2,7 +2,7 @@
 
 ## Basics
 
-- **Media file**: `assets/media/guided-tour-en.mp4` (H.264 1280×720, 25 fps, CRF 27, AAC 96 kbps, ~86 s, ~1.7 MiB)
+- **Media file**: `assets/media/guided-tour-en.mp4` (H.264 1280×720, 12 fps, CRF 28, AAC 96 kbps, ~86 s, ~1.3 MiB; regenerated at v2.31 with the repaired figures)
 - **Chinese counterpart**: `assets/media/guided-tour.mp4` (same spec, Chinese figures)
 - **Captions**: `assets/media/guided-tour-en.vtt` (WebVTT, synchronized with this transcript)
 - **Poster**: `assets/media/guided-tour-poster-en.png`

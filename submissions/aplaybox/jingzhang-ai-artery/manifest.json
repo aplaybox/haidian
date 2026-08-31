@@ -14,7 +14,7 @@
     "model_family": "glm",
     "model_detail": "GLM-5.3-Flash (Z.ai) - main agent for urban design generation"
   },
-  "generated_at": "2026-08-24T02:53:19Z",
+  "generated_at": "2026-08-31T00:00:00Z",
   "files": [
     {
       "path": "manifest.json",
@@ -56,7 +56,7 @@
       "path": "self_check.json",
       "role": "self_check",
       "required": true,
-      "sha256": "e991f3810065ca460f1deeef227f298f1a4ac50ebd398d157b67ef9ebac4cc08"
+      "sha256": "9c03dd2dcbb171153acd173e32e0dc54388b32da61e391f330ae6b4a89368589"
     },
     {
       "path": "compliance_matrix.json",
@@ -81,7 +81,7 @@
       "role": "rendered_proposal_html",
       "required": true,
       "language": "zh",
-      "sha256": "8cd7bad0456c5f74ee6c496316873e947c6b153c6a10ba5a08f8e789a06012cc"
+      "sha256": "904a31ec89d818e6a8b6454ca0afc720926692cd652bde2ff0cf736e76c89b6c"
     },
     {
       "path": "report/narrative.md",
@@ -93,7 +93,7 @@
       "path": "report/copyright_statement.md",
       "role": "copyright_statement",
       "required": true,
-      "sha256": "05459db92040e28de1abbba2260ffd907ee4c04573ae9375a8d37fa382ac757e"
+      "sha256": "4651c1fd2340783923a377f838a9e07ade859cbb8017c60989a2d3a9890d2a8a"
     },
     {
       "path": "drawings/a3-booklet.pdf",
@@ -107,7 +107,7 @@
       "role": "drawing",
       "required": true,
       "language": "zh",
-      "sha256": "87eecd883ef87d883d52a8b91788f715d96079df8bca93789790c3c0f48bc61c"
+      "sha256": "e500e8626cd851f54c0df14ef1c8ca33a8963a5b03730c8befc036b05283cf57"
     },
     {
       "path": "visual/index.html",
@@ -128,7 +128,7 @@
       "role": "proposal_figure",
       "required": true,
       "language": "neutral",
-      "sha256": "527127f422586ef9762b5521d3d679edad4a78e8d4c3ba2717e18034ce3540bb"
+      "sha256": "1c65b9cf969cd6f4e6f64da52cc6ba0d939e1ef4ab4acfc7d51a98f56c2e9531"
     },
     {
       "path": "assets/figures/metrics-evidence.png",
@@ -233,7 +233,7 @@
       "required": true,
       "language": "en",
       "translation_of": "report/proposal.html",
-      "sha256": "5a9344e85aeb04922897783558f5dc91a62a5d196d6bf825eb56bc28813b64d4"
+      "sha256": "25590aab9445498b26d1e275e0b2e69cfb35a19fe6e0df1fa39a850360830ff5"
     },
     {
       "path": "visual/index.en.html",
@@ -257,7 +257,7 @@
       "required": true,
       "language": "en",
       "translation_of": "drawings/a0-boards.pdf",
-      "sha256": "ce01053091651dd929c60a859eb18ddbd7269558dd405cb49d3a88d033abf6be"
+      "sha256": "468ff853227166d87ed31e5e6bf8678be0ff72a99366bd2212998cca9a18216a"
     },
     {
       "path": "assets/media/logo.svg",
@@ -306,7 +306,7 @@
       "role": "narrative",
       "required": false,
       "language": "zh",
-      "sha256": "dbaa2d5812c68fa7d582aef1d7deb065684ca56c2d3d96054e46da606f67a9d2"
+      "sha256": "b6e6f4017afafc3c9bc841d8b5c2512b0964a80527a87b2d30aace4f9a51b362"
     },
     {
       "path": "assets/media/cover.webp",
@@ -469,7 +469,7 @@
       "role": "proposal_figure",
       "required": false,
       "language": "en",
-      "sha256": "60871f10124aa57916865a5c350011aa5956df2746a74f413f04466a820e2232",
+      "sha256": "bbe89416372f2d2334d18c3d1d60c2e8d92bb82b31539cb5190d2644a0e932a1",
       "translation_of": "assets/figures/site-overview.png"
     },
     {
@@ -477,7 +477,7 @@
       "role": "proposal_figure",
       "required": false,
       "language": "en",
-      "sha256": "a0308b40555b377fbc233bac84d532c50093f60793688ae03ab5770f7773c8d7",
+      "sha256": "6a3d6e7d1909fa1d7552c27ebdffcb35eaaa43a92aa18c9c588d2a406abbe467",
       "translation_of": "assets/figures/land-use-structure.png"
     },
     {
@@ -585,7 +585,7 @@
       "poster": "assets/media/guided-tour-poster.png",
       "caption": "assets/media/guided-tour.vtt",
       "transcript": "assets/media/guided-tour.md",
-      "sha256": "aa2987d291f9c47bafcb577563e128c34ba2e10b67404aa68d520134c316cb55"
+      "sha256": "f6c726f35e3d7b72994a4a8a0c0b6d5998a229c045f8563f00b60f71ecb6d8ee"
     },
     {
       "path": "assets/media/guided-tour-en.mp4",
@@ -620,7 +620,7 @@
       "role": "transcript",
       "required": false,
       "language": "zh",
-      "sha256": "f6c935fc9388ae254f9a9919a019cc620366143126001aa8de08c49f9087a67d"
+      "sha256": "f8813463df379f2418d5673dc79c9163c54420b077e20e1288a8cf31ce2e80a4"
     },
     {
       "path": "assets/media/guided-tour-en.md",
@@ -628,14 +628,14 @@
       "required": false,
       "language": "en",
       "translation_of": "assets/media/guided-tour.md",
-      "sha256": "8f499a3672110afa200c49af3a2aa1d0a7f19080fab3b4e0535c88fad0cbeb66"
+      "sha256": "4b3e23416172b062f5267cd117fa54fdb3fd47e63258d3f5caa7318208654264"
     },
     {
       "path": "assets/media/guided-tour-poster.png",
       "role": "media_poster",
       "required": false,
       "language": "neutral",
-      "sha256": "52c3b2baf0eb32f543a240d99e58fae97350ce5b4207f4ecf9d29e841b473264"
+      "sha256": "0c1a896d1bc9c5df8c59bdb316814a6dd56638ef80570dc67a3d4cc2a0fb2024"
     },
     {
       "path": "assets/media/guided-tour-poster-en.png",

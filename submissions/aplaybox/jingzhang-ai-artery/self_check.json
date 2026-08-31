@@ -65,7 +65,10 @@
         "submissions/aplaybox/jingzhang-ai-artery/assets/media/guided-tour-en.mp4",
         "submissions/aplaybox/jingzhang-ai-artery/assets/media/guided-tour-en.vtt",
         "submissions/aplaybox/jingzhang-ai-artery/assets/media/guided-tour-poster-en.png",
+        "submissions/aplaybox/jingzhang-ai-artery/assets/media/guided-tour-poster.en.png",
         "submissions/aplaybox/jingzhang-ai-artery/assets/media/guided-tour-poster.png",
+        "submissions/aplaybox/jingzhang-ai-artery/assets/media/guided-tour.en.mp4",
+        "submissions/aplaybox/jingzhang-ai-artery/assets/media/guided-tour.en.vtt",
         "submissions/aplaybox/jingzhang-ai-artery/assets/media/guided-tour.md",
         "submissions/aplaybox/jingzhang-ai-artery/assets/media/guided-tour.mp4",
         "submissions/aplaybox/jingzhang-ai-artery/assets/media/guided-tour.vtt",
@@ -112,7 +115,7 @@
       "ai_package_stages": {
         "submissions/aplaybox/jingzhang-ai-artery": "formal"
       },
-      "total_bytes": 34089567,
+      "total_bytes": 33671081,
       "maintainer_bypass": false
     },
     "stderr": ""
