@@ -2,7 +2,7 @@
 
 ## 基本信息
 
-- **媒体文件**：`assets/media/guided-tour.mp4`（H.264 1280×720，12 fps，CRF 28，AAC 96 kbps，约 76.5 秒，约 1.2 MiB；v2.31 随修复版图件重生成）
+- **媒体文件**：`assets/media/guided-tour.mp4`（H.264 1280×720，12 fps，CRF 28，AAC 96 kbps，约 76.5 秒，约 1.2 MiB；v2.31/v2.32 随修复版图件重生成）
 - **对应英文版**：`assets/media/guided-tour.en.mp4`（同规格，画面使用英文版图件）
 - **字幕**：`assets/media/guided-tour.vtt`（WebVTT，与本逐字文稿同步）
 - **海报**：`assets/media/guided-tour-poster.png`
